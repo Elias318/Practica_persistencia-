@@ -19,7 +19,7 @@ public abstract class Personaje {
   private long id;
 
   @Getter
-  @Transient
+  @ManyToMany
   private List<ElementoDefensor> elementos;
 
   @Getter @Setter
