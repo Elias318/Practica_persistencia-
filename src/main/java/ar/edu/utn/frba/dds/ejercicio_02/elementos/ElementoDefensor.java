@@ -10,6 +10,10 @@ import javax.persistence.*;
 @DiscriminatorColumn(name = "tipo")
 public abstract class ElementoDefensor {
 
+  @Id
+  @GeneratedValue
+  private long id;
+
   public abstract void defenderA(Personaje personaje);
 
 }
